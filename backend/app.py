@@ -12,7 +12,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_mail import Mail, Message
 
 app = Flask(__name__)
-CORS(app, origins=os.environ.get("FRONTEND_URL", "*").split(","))
+CORS(app)
 
 app.config.update(
     SQLALCHEMY_DATABASE_URI = "sqlite:///drivelearn.db",
