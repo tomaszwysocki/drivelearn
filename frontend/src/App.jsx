@@ -1,6 +1,5 @@
 import { useState } from 'react'
 
-// W produkcji ustaw VITE_API_URL w zmiennych środowiskowych Vercel
 const API_URL =
     (typeof import.meta !== 'undefined' && import.meta?.env?.VITE_API_URL) ??
     'http://localhost:5000'
@@ -219,9 +218,9 @@ export default function App() {
 
     return (
         <>
+            <title>DriveLearn</title>
             <style>{FONTS + CSS}</style>
 
-            {/* NAV */}
             <nav className='nav'>
                 <div className='logo'>
                     {ICON_CAR}
@@ -231,7 +230,6 @@ export default function App() {
                 </div>
             </nav>
 
-            {/* HERO */}
             <section className='hero'>
                 <div className='hero-glow' />
                 <div className='hero-road' />
@@ -305,7 +303,6 @@ export default function App() {
                 </div>
             </section>
 
-            {/* FEATURES */}
             <section className='features'>
                 <div className='section-eyebrow'>Co otrzymasz</div>
                 <h2 className='section-h2'>
